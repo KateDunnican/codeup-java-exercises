@@ -25,10 +25,13 @@ public class ConsoleExercises {
 //        String sentence = myInput.nextLine(); //gets the whole sentence
 //        System.out.println(sentence);
 
-        System.out.println("Please enter a length: ");
-        int length = Integer.parseInt(myInput.nextLine());
-        System.out.println("Please enter a width: ");
-        int width = Integer.parseInt(myInput.nextLine());
-
+//        System.out.println("Please enter a length: ");
+//        int length = Integer.parseInt(myInput.nextLine());
+//        System.out.println("Please enter a width: ");
+//        int width = Integer.parseInt(myInput.nextLine());
+//        int perimeter = (2*width) + (2*length);
+//        int area = length * width;
+//        System.out.println("Perimeter = " + perimeter);
+//        System.out.println("Area = " + area);
     }
 }
