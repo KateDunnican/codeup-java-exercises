@@ -57,14 +57,23 @@ public class ControlFlowExercises {
 
     //Exercise 3
 //        Scanner myInput = new Scanner(System.in);
-//        System.out.println("Please enter an integer: ");
-//        int userInt = myInput.nextInt();
-//        System.out.println(userInt);
+//        String userConfirm = "Y";
+//        while (userConfirm.equalsIgnoreCase("y")){
+//            System.out.println("Please enter an integer: ");
+//            int userInt = Integer.parseInt(myInput.nextInt());
+//
+//
+//            System.out.println(userInt);
+//        };
 
 
 
 
     //Exercise 4
+
+
+
+
 
     }
 }
