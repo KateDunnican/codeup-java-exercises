@@ -2,19 +2,19 @@ public class Person {
     public String name;
 
     public Person(String personName){ //the individual Person constructor
-        name = personName;
+        this.name = personName;
     };
 
     public String getName(){ // gets the person's name
-        return name;
+        return this.name;
     };
 
-    public void setName(String x){ // sets the name property to the passed value
-        name = x;
+    public void setName(String x){ // sets the name
+        this.name = x;
     };
 
-    public void sayHello(String x){ // prints a message to the console using the person's name
-        System.out.println("Hey there, " + x);
+    public void sayHello(){ // says hello using the person's name
+        System.out.println("Hey there, " + this.name);
     };
 
     public static void main (String [] args){
@@ -22,8 +22,8 @@ public class Person {
 //        System.out.println(dog.getName());
 //        dog.setName("Yo mama");
 //        System.out.println(dog.getName() + " is his new name.");
-//        dog.sayHello(dog.getName());
-//
+//        dog.sayHello();
+
         Person person1 = new Person("John");
         Person person2 = person1;
         System.out.println(person1.getName());
