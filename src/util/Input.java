@@ -10,7 +10,7 @@ public class Input {
             scanner = new Scanner(System.in);
         }
 
-        public String getString(){
+        public static String getString(){
             System.out.println("Type something:");
             String scannerInput = scanner.nextLine();
             System.out.println("You said: " + scannerInput);
