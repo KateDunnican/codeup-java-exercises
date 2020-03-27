@@ -5,7 +5,7 @@ import util.Input;
 public class MoviesApplication {
     public static void main(String[] args) {
         System.out.println("Which movies would you like to view?\n\t0 - Exit\n\t1 - All\n\t2 - Animated\n\t3 - Comedy\n\t4 - Drama\n\t5 - Horror\n\t6 - Musical\n\t7 - Sci-fi\n\nPlease pick one:");
-
+        Input newInput = new Input(); //why does this have to be here?
         String myScanner = Input.getString();
 
         if (myScanner.equals("0")){
