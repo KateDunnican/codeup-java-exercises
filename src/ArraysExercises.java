@@ -6,6 +6,7 @@ public class ArraysExercises {
     // Method to add a Person object to the people array by making a new array
     public static Person[] addPerson (Person[] personArray, Person newPerson){
         Person[] newArray = Arrays.copyOf(personArray, personArray.length + 1);
+        // see instructor version for better way to do this
         newArray[3] = new Person(newPerson.getName());
         return newArray;
     }
@@ -21,7 +22,6 @@ public class ArraysExercises {
             people[1]= new Person("Vivian");
             people[2]= new Person("Trant");
 
-
             // Iterating through people
             for (Person individual : people){
                 System.out.println(individual.getName());
@@ -32,5 +32,4 @@ public class ArraysExercises {
                 System.out.println(individual.getName());
             }
     }
-
 }
