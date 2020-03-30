@@ -4,6 +4,8 @@ public class Movie {
     private String name;
     private String category;
 
+    // USE COMMAND + N TO MAKE ALL THIS STUFF
+
     public Movie (String x, String y){ //constructor
         this.name = x;
         this.category = y;
