@@ -6,42 +6,24 @@ public class Rectangle extends Quadrilateral implements Measurable{
         super(l, w);
     }
 
-    @Override
+    @Override //from Measurable
     public double getPerimeter() {
-        return ((length * 2) + (width * 2));
+        return ((length * 2) + (width * 2)); //length and width from Quadrilateral
     }
 
-    @Override
+    @Override //from Measurable
     public double getArea() {
-        return (length * width);
+        return (length * width); //length and width from Quadrilateral
     }
 
     @Override
-    public void setLength(double l) {
+    public void setLength(double l) { //from Quadrilateral
         this.length = l;
     }
 
     @Override
-    public void setWidth(double w) {
+    public void setWidth(double w) { //from Quadrilateral
         this.width = w;
     }
-
-
-// Code from Polymorph exercise:
-//    protected int length;
-//    protected int width;
-//
-//    public Rectangle (int l, int w){ //constructor
-//        this.length = l;
-//        this.width = w;
-//    }
-//
-//        public int getPerimeter(){
-//            return ((2*length)+(2*width));
-//        }
-//
-//        public int getArea(){
-//            return (length * width);
-//        }
 }
 

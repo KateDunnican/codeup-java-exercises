@@ -19,6 +19,6 @@ public abstract class Quadrilateral extends Shape implements Measurable{
     }
 
     // Abstract Setters
-    public abstract void setLength(double length);
-    public abstract void setWidth(double width);
+    public abstract void setLength(double length); //overrode in Rectangle and Square
+    public abstract void setWidth(double width); //overrode in Rectangle and Square
 }

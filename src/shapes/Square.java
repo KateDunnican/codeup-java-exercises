@@ -8,43 +8,24 @@ public class Square extends Quadrilateral{
         this.side = side;
     }
 
-    @Override
-    public void setLength(double length) {
-
-    }
-
-    @Override
-    public void setWidth(double width) {
-
-    }
-
-    @Override
+    @Override // from Measurable
     public double getPerimeter() {
         return side * 4;
     }
 
-    @Override
+    @Override // from Measurable
     public double getArea() {
         return side * side;
     }
 
+    @Override
+    public void setLength(double length) { //from Quadrilateral
+        this.length = length;
+    }
 
-// Code from Polymorph exercise:
-//    protected int side;
-//
-//    public Square (int side){
-//        //constructor calls Rectangle constructor and replaces "l" and "w" with "side"
-//        super(side, side);
-//        this.side = side;
-//    }
-//
-//        @Override
-//        public int getPerimeter(){
-//            return (4 * side);
-//        }
-//
-//        @Override
-//        public int getArea() {
-//            return (side * side);
-//        }
+    @Override
+    public void setWidth(double width) { //from Quadrilateral
+        this.width = width;
+    }
+
 }
