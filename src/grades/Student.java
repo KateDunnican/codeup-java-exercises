@@ -35,9 +35,5 @@ public class Student {
         //all my stuff works!! Yay!!
         Student kate = new Student("Kate");
         kate.addGrade(98);
-
-
-
-
     }
 }
