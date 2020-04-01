@@ -32,6 +32,12 @@ public class Student {
     }
 
     public static void main(String[] args) {
+        //all my stuff works!! Yay!!
+        Student kate = new Student("Kate");
+        kate.addGrade(98);
+
+
+
 
     }
 }
