@@ -30,6 +30,8 @@ public class GradesApplication {
         Scanner scanner = new Scanner(System.in);
         boolean keepGoing = true;
 
+
+
         do {
             System.out.println();
             System.out.println(students.keySet());
@@ -40,21 +42,9 @@ public class GradesApplication {
                 keepGoing = false;
                 break;
             }
-            else if (userInput.equalsIgnoreCase("BrycePayne")){
-                System.out.println(students.get("BrycePayne").getName());
-                System.out.println(students.get("BrycePayne").getGradeAverage());
-            }
-            else if (userInput.equalsIgnoreCase("JasmineRivera")){
-                System.out.println(students.get("JasmineRivera").getName());
-                System.out.println(students.get("JasmineRivera").getGradeAverage());
-            }
-            else if (userInput.equalsIgnoreCase("JeffWalton")){
-                System.out.println(students.get("JeffWalton").getName());
-                System.out.println(students.get("JeffWalton").getGradeAverage());
-            }
-            else if (userInput.equalsIgnoreCase("KateMcKinney")){
-                System.out.println(students.get("KateMcKinney").getName());
-                System.out.println(students.get("KateMcKinney").getGradeAverage());
+            else if (students.containsKey(userInput.strip())){
+                System.out.println(students.get(userInput).getName());
+                System.out.println(students.get(userInput).getGradeAverage());
             }
             else {
                 System.out.println("This person isn't in the list, try again!");
