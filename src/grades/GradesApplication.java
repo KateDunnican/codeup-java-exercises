@@ -30,8 +30,6 @@ public class GradesApplication {
         Scanner scanner = new Scanner(System.in);
         boolean keepGoing = true;
 
-
-
         do {
             System.out.println();
             System.out.println(students.keySet());
